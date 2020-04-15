@@ -1,0 +1,127 @@
+﻿@{
+    ViewData["Title"] = "Certificados";
+}
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="card border-primary mb-3">
+            <div class="card-header">
+                <h5 class="card-title">Faça um teste</h5>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data" class="form-horizontal" role="form" asp-controller="Home" asp-action="Test">
+                    <div class="form-row">
+
+                        <div class="form-group ">
+                            <span>Selecione uma imagem*</span>
+                            <input type="file"
+                                   id="backImage"
+                                   name="backImage"
+                                   accept="image/png, image/jpeg"
+                                   required>
+                        </div>
+
+                        <div class="form-group ">
+                            <span>Escolha a posição do nome*</span>
+                            <input type="number"
+                                   value="350"
+                                   id="positionName"
+                                   name="positionName"
+                                   required>
+                        </div>
+
+                        <div class="form-group ">
+                            <span>Aumente a largura da imagem </span>
+                            <input type="number"
+                                   id="moreWidthToImage"
+                                   name="moreWidthToImage">
+                        </div>
+
+                        <div class="form-group ">
+                            <span>Aumente a altura da imagem</span>
+                            <input type="number"
+                                   id="moreHeightToImage"
+                                   name="moreHeightToImage">
+                        </div>
+
+                        <div class="form-group">
+                            <spam> Apenpenas um nome*</spam>
+                            <input type="text"
+                                   id="nameTest"
+                                   name="nameTest">
+
+                        </div>
+
+                        <div class="form-group col-6">
+                            <button type="submit" class="btn btn-primary ">Gerar Certificado</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-6">
+        <div class="card  border-info mb-3">
+            <div class="card-header">
+                <h5 class="card-title">Gere Vários</h5>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data" class="form-horizontal" role="form" asp-controller="Home" asp-action="Upload">
+                    <div class="form-row">
+
+                        <div class="form-group ">
+                            <span>Selecione uma imagem*</span>
+                            <input type="file"
+                                   id="backImage"
+                                   name="backImage"
+                                   accept="image/png, image/jpeg"
+                                   required>
+                        </div>
+
+                        <div class="form-group ">
+                            <span>Escolha a posição do nome*</span>
+                            <input type="number"
+                                   value="350"
+                                   id="positionName"
+                                   name="positionName"
+                                   required>
+                        </div>
+
+                        <div class="form-group ">
+                            <span>Aumente a largura da imagem </span>
+                            <input type="number"
+                                   id="moreWidthToImage"
+                                   name="moreWidthToImage">
+                        </div>
+
+                        <div class="form-group ">
+                            <span>Aumente a altura da imagem</span>
+                            <input type="number"
+                                   id="moreHeightToImage"
+                                   name="moreHeightToImage">
+                        </div>
+
+                        <div class="form-group">
+                            <textarea cols="60"
+                                      rows="10"
+                                      placeholder="Insira a lista dos nomes*"
+                                      id="listName"
+                                      name="listName"
+                                      required></textarea>
+                        </div>
+
+                        <div class="form-group col-6">
+                            <button type="submit" class="btn btn-primary ">Gerar Certificados</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
